@@ -1,106 +1,119 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>freeCodeCamp Survey Form</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script src='main.js'></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>freeCodeCamp Survey Form</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+  <script src='main.js'></script>
 </head>
+
 <body>
-    <section>
+  <section>
     <!--Survey form head-->
 
     <div class="head">
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform </p>
-</div>
-    
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </div>
+
     <form id="survey-form">
 
-        <!--Start of the form-->
-<fieldset>
-  <div id="container">
-    <div class="sec1">
-  <label id="name-label" for="name">Name <br>
-    <input style="display: block;" id="name" type="text" name="name" placeholder="Enter your name" required></label>
-   <br>
-    <label id="email-label" for="email">Email <br><input id="email" type="email" name="email" placeholder="Enter your Email" required></label>
-    <br>
-    <label id="number-label" for="age">Age (optional) <br> <input id="number" type="number" name="number" min="18" max="35" pattern="[18-25 26-30 30-35]" title="HTML5 validation error" placeholder="Age"></label>
-    
-    <!--Description part-->
-<br>
-    <label> Which best describes your current role?
-      <select style="display: block; padding: 12px;" id="dropdown" >
-        <option>Select current role</option>
-          <option>Student</option>
-            <option>Full Time Job</option>
-              <option>Full Time Learner</option>
-                <option>Prefer not to say<option>Other</option>
-      </select>
-    </label>
-</div>
-   <br>
-    <!--Recommendation part-->
-<div class="sec2">
-    <label > Would you recommend freeCodeCamp to a friend? <br><br><input type="radio" id="radio" value="definetly" name="definitely">Definitely</label>
-       <label style="display: block;"><input  type="radio" value="maybe" id="radio" name="maybe">Maybe</label>
-          <label style="display: block;"><input  type="radio" value="not sure" id="radio" name="not sure">Not sure</label>
-        </div>
-        <br>
+      <!--Start of the form-->
+      <fieldset>
+        <div id="container">
+          <div class="sec1">
+            <label id="name-label" for="name">Name <br>
+              <input style="display: block;" id="name" type="text" name="name" placeholder="Enter your name"
+                required></label>
+            <br>
+            <label id="email-label" for="email">Email <br><input id="email" type="email" name="email"
+                placeholder="Enter your Email" required></label>
+            <br>
+            <label id="number-label" for="age">Age (optional) <br> <input id="number" type="number" name="number"
+                min="18" max="35" pattern="[18-25 26-30 30-35]" title="HTML5 validation error"
+                placeholder="Age"></label>
+
+            <!--Description part-->
+            <br>
+            <label> Which best describes your current role?
+              <select style="display: block; padding: 12px;" id="dropdown">
+                <option value="" disabled>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full time job" selected>Full Time Job</option>
+                <option value="full time learner">Full Time Learner</option>
+                <option value="prefer not to say">Prefer not to say
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+          <br>
+          <!--Recommendation part-->
+          <div class="sec2">
+            <label> Would you recommend freeCodeCamp to a friend? <br><br><input type="radio" id="radio"
+                value="definetly" name="recommendations">Definitely</label>
+            <label style="display: block;"><input type="radio" value="maybe" id="radio" name="recommendations">Maybe</label>
+            <label style="display: block;"><input type="radio" value="not sure" id="radio" name="recommendations">Not
+              sure</label>
+              <label style="display: block;"><input type="radio" value="not sure" id="radio" name="not ">Prefer not say
+                </label>
+          </div>
+          <br>
           <!--Favorite part-->
           <div class="sec3">
 
-          <label> What is your favorite feature of freeCodeCamp? <br>
-            <select style="display: block; padding: 12px;">
-              <option>Select an option</option>
-              <option>Challenges</option>
+            <label> What is your favorite feature of freeCodeCamp? <br>
+              <select style="display: block; padding: 12px;">
+                <option>Select an option</option>
+                <option>Challenges</option>
                 <option>Projects</option>
                 <option>Community</option>
                 <option>Open Source</option>
 
-            </select>
-          </label>
-        </div>
-        <br>
-    
+              </select>
+            </label>
+          </div>
+          <br>
+
           <!--Check part-->
           <div class="sec4">
             <p>What would you like to see improved? (Check all that apply)</p><br>
-            <label><input type="checkbox" value="frontend">  Front-end Projects</label><br>
-            <label><input type="checkbox" value="backend">  Back-end Projects</label><br>
-            <label><input type="checkbox" value="data">  Data Visualization</label><br>
-            <label><input type="checkbox" value="challenges">  Challenges</label><br>
-            <label><input type="checkbox" value="open">  Open Source Community</label><br>
-            <label><input type="checkbox" value="gitter">  Gitter help rooms</label><br>
-            <label><input type="checkbox" value="videos">  Videos</label><br>
-            <label><input type="checkbox" value="city">  City Meetups</label><br>
-            <label><input type="checkbox" value="wiki">  Wiki</label><br>
-            <label><input type="checkbox" value="forum">  Forum</label><br>
-            <label><input type="checkbox" value="addition">  Additional Courses</label><br>
-        </div>
-        
-        <br>
+            <label><input type="checkbox" value="frontend"> Front-end Projects</label><br>
+            <label><input type="checkbox" value="backend"> Back-end Projects</label><br>
+            <label><input type="checkbox" value="data"> Data Visualization</label><br>
+            <label><input type="checkbox" value="challenges"> Challenges</label><br>
+            <label><input type="checkbox" value="open"> Open Source Community</label><br>
+            <label><input type="checkbox" value="gitter"> Gitter help rooms</label><br>
+            <label><input type="checkbox" value="videos"> Videos</label><br>
+            <label><input type="checkbox" value="city"> City Meetups</label><br>
+            <label><input type="checkbox" value="wiki"> Wiki</label><br>
+            <label><input type="checkbox" value="forum"> Forum</label><br>
+            <label><input type="checkbox" value="addition"> Additional Courses</label><br>
+          </div>
+
+          <br>
 
           <!--Comment section-->
           <div class="sec5">
 
-         <p>Any comment or suggestions</p>
-          <label> <textarea style="display: block; font-family: sans-serif; font-size: 20px;" placeholder="Enter your comment here..."></textarea>
-          </label>
-          <br>
-        </div>
-        <div class="sec6">
+            <p>Any comment or suggestions</p>
+            <label> <textarea style="display: block; font-family: sans-serif; font-size: 20px;"
+                placeholder="Enter your comment here..."></textarea>
+            </label>
+            <br>
+          </div>
+          <div class="sec6">
 
-          <!--Submittion part-->
-          <button id="submit">Submit</submit>
+            <!--Submittion part-->
+            <button id="submit">Submit</submit>
           </div>
         </div>
-</fieldset>
+      </fieldset>
     </form>
-</section>
-    
+  </section>
+
 </body>
+
 </html>
